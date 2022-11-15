@@ -96,6 +96,7 @@ func initAppConfig() (string, interface{}) {
 
 func initRootCmd(rootCmd *cobra.Command, encodingConfig params.EncodingConfig) {
 	cfg := sdk.GetConfig()
+	initSDKConfig()
 
 	cfg.Seal()
 
